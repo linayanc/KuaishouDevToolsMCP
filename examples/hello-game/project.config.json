@@ -1,0 +1,9 @@
+{
+    "description": "快手小游戏项目配置文件",
+    "projectname": "Kuaishou MCP demo",
+    "appid": "kwai_game_test_appid",
+    "engine_type": "frog",
+    "setting": {
+        "es6": false
+    }
+}

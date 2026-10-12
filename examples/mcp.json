@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "kuaishou": {
+      "command": "node",
+      "args": ["E:/ks-mcp/dist/index.js"],
+      "env": { "KUAISHOU_CDP_ENDPOINT": "http://127.0.0.1:9223" }
+    }
+  }
+}

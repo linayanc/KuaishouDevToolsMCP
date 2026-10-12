@@ -1,0 +1,14 @@
+name: Feature request
+description: Describe a concrete mini-game development workflow
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve? / 解决什么问题？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior / 期望行为
+      description: Include the engine, IDE version and an example tool call if relevant.

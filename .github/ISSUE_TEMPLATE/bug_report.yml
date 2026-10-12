@@ -1,0 +1,22 @@
+name: Bug / compatibility report
+description: 报告可复现问题或 IDE 兼容性故障
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Environment / 环境
+      description: OS, Node.js, Kuaishou mini-game IDE, engine and phone versions
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction / 复现步骤
+      description: Include expected and actual behavior. Use a minimal, non-private project.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Sanitized diagnostics / 脱敏信息
+      description: Doctor output and tool error codes. Remove tokens, accounts, QR codes and CDP URL query strings.

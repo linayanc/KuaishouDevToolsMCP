@@ -1,0 +1,66 @@
+{
+  "name": "kuaishou-devtools-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Kuaishou mini-game DevTools: projects, device logs, errors, previews and debugging.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linayanc/KuaishouDevToolsMCP.git"
+  },
+  "homepage": "https://github.com/linayanc/KuaishouDevToolsMCP#readme",
+  "bugs": {
+    "url": "https://github.com/linayanc/KuaishouDevToolsMCP/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "kuaishou-devtools-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "ROADMAP.md",
+    "CHANGELOG.md",
+    "docs",
+    "examples"
+  ],
+  "keywords": [
+    "mcp",
+    "kuaishou",
+    "kwai",
+    "mini-game",
+    "devtools",
+    "unity",
+    "codex"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "tsx --test test/*.test.ts",
+    "smoke": "node scripts/smoke.mjs",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "verify": "npm run check && npm test && npm run build",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.3.1",
+    "qrcode": "^1.5.4",
+    "ws": "^8.22.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.3.1",
+    "@types/node": "^22.20.5",
+    "@types/qrcode": "^1.5.6",
+    "@types/ws": "^8.18.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
