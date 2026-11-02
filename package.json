@@ -50,7 +50,7 @@
     "prepack": "npm run build"
   },
   "dependencies": {
-    "@modelcontextprotocol/server": "^2.3.1",
+    "@modelcontextprotocol/server": "^2.4.0",
     "qrcode": "^1.5.4",
     "ws": "^8.22.0",
     "zod": "^4.6.5"
